@@ -4,11 +4,8 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 /**
- * The kid character controlled by the player.
- *
- * Currently drawn as a simple placeholder shape. Once you have your sprite
- * files, load them (see the commented-out block below) and swap the
- * drawPlaceholder(...) call in draw() for drawing the BufferedImage instead.
+swap the
+ * drawPlaceholder(...) call in draw() for drawing the BufferedImage instead cuando tengamo los archivos weon
  */
 public class Player {
     public static final int WIDTH = 32;
@@ -19,12 +16,11 @@ public class Player {
     private Direction facing = Direction.DOWN;
     private boolean moving = false;
 
-    // Simple walk-cycle animation timer (works fine with placeholder shapes,
-    // and will also drive frame-switching once real sprite frames are added).
+    // Temporizador de animación de ciclo de caminata simple,funciona bien con formas de marcador de posicion
     private int animTick = 0;
     private int animFrame = 0;
 
-    // --- Sprite hook (uncomment and adapt once you upload your sprite sheet) ---
+    // --- Sprite hook (ADAPTAR CUANDO TENGAMOS SPRITES) ---
     // private BufferedImage spriteSheet;
     // public void loadSprite(String path) throws java.io.IOException {
     //     spriteSheet = javax.imageio.ImageIO.read(new java.io.File(path));
@@ -105,7 +101,7 @@ public class Player {
         g.setColor(new Color(90, 60, 30));
         g.fillArc(x + 4, y + bob - 2, WIDTH - 8, 16, 0, 180);
 
-        // facing indicator (small dot showing which way the kid looks)
+        // / indicador de orientacion 
         g.setColor(Color.WHITE);
         int cx = x + WIDTH / 2, cy = y + 10 + bob;
         switch (facing) {
