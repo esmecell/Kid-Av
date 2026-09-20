@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-/** A collectible star item scattered around the play area. */
+/** Un objeto coleccionable con forma de estrella disperso por la zona de juego.*/
 public class Item {
     public static final int SIZE = 20;
 
