@@ -1,6 +1,6 @@
 # concepto
 
-Un pequeño juego 2D de vista cenital desarrollado con Java Swing. Controla a un personaje infantil por el patio trasero, esquiva los árboles y recoge las 5 estrellas para ganar. 
+Un pequeño juego 2D de vista cenital desarrollado con Java Swing. Controla a un personaje infantil por el patio trasero, esquiva los árboles y recoge las 5 estrellas para ganar. proyecto pal jus q queria 
 
 ## Controles
 - Move: Arrow keys or `W` `A` `S` `D`
