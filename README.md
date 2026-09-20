@@ -1,12 +1,8 @@
 # Backyard Adventure
 
-A small top-down 2D game built with Java Swing. Walk a kid character around
-a backyard, dodge the trees, and collect all 5 stars to win.
+Un pequeño juego 2D de vista cenital desarrollado con Java Swing. Controla a un personaje infantil por el patio trasero, esquiva los árboles y recoge las 5 estrellas para ganar. 
 
-Currently uses simple placeholder shapes for the character and items —
-built so real sprite images can be dropped in later (see `Player.java`).
-
-## Controls
+## Controles
 - Move: Arrow keys or `W` `A` `S` `D`
 
 ## Requirements
@@ -21,7 +17,7 @@ javac -d bin src/*.java
 java -cp bin Main
 ```
 
-## Project structure
+## Estructura
 ```
 src/
   Main.java       # entry point, creates the game window
@@ -31,14 +27,10 @@ src/
   Direction.java  # facing direction enum
 ```
 
-## Adding your own sprite
-`Player.java` has a commented-out `loadSprite(...)` method and a hook in
-`draw()` — once you have sprite image files, load them there (e.g. via
-`ImageIO.read`) and swap in `g.drawImage(...)` instead of the placeholder
-shapes. For animation, extend the existing `animFrame` logic to pick the
-right frame from a sprite sheet.
+## Añadan los sprites nubs
+`Player.java` contiene un método `loadSprite(...)` comentado y un punto de integración en `draw()`; una vez que dispongas de los archivos de imagen de los *sprites*, cárgalos allí (por ejemplo, mediante `ImageIO.read`) y utiliza `g.drawImage(...)` en lugar de las formas provisionales. Para la animación, amplía la lógica existente de `animFrame` a fin de seleccionar el fotograma correcto de la hoja de *sprites* (*sprite sheet*).
 
-## Ideas for next steps
-- Swap in real sprite images (idle / walk frames per direction)
-- Add sound effects for collecting stars
-- Add multiple levels / a timer / a high score
+## PENDIENTE:
+- Los fukin sprites (idle / walk frames per direction)
+- Efectos de sonido al colectar esterllas
+- Añadir niveles multiples / un timer / un high score
