@@ -1,8 +1,8 @@
 import javax.swing.JFrame;
 
 /**
- * Entry point for Backyard Adventure.
- * Launches the game window and starts the game loop.
+ Punto de entrada para el juego.
+ * Abre la ventana del juego e inicia el bucle del juego.
  */
 public class Main {
     public static void main(String[] args) {
