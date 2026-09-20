@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Core game panel: owns the game loop (via Swing Timer), handles keyboard
- * input, updates game state, and renders everything each frame.
+* Panel principal del juego: gestiona el bucle del juego (mediante un Swing Timer), procesa la entrada de teclado, actualiza el estado del juego y renderiza todo en cada fotograma.
  */
 public class GamePanel extends JPanel implements ActionListener {
     private static final int PANEL_WIDTH = 800;
